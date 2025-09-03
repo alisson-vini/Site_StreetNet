@@ -138,18 +138,24 @@ img#imagem_logo{
     margin: 10px 10px 0px 10px;
     height: 500px;
     width: 300px;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 0.4px 0.4px 4px rgba(128, 128, 128, 0.501);
+    border-radius: 10px 10px 10px 10px;
+    border: 0.1px solid rgba(128, 128, 128, 0.3);
+    box-shadow: 0.4px 0.4px 5px rgba(128, 128, 128, 0.3);
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.caixa_plano:hover{
+    border: 1.2px solid #ffa60095;
+    box-shadow: 1px 1px 2px #ffa60095;
+}
+
 .caixa_plano_assinar{
     height: 60px;
     width: auto;
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 10px 10px;
     background-color: #FFA500;
     align-content: center;
 }
@@ -159,10 +165,6 @@ img#imagem_logo{
     text-decoration: none;
     color: white;
     font-weight: bolder;
-}
-
-.caixa_plano_assinar > a:hover {
-    background-color: #E69500;
 }
 
 
