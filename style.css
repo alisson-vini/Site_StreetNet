@@ -1,0 +1,182 @@
+/* reset */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+
+/* cotainer Menu */
+header#container_header{
+
+    background: #070b3800;
+    /* background: linear-gradient(325deg, rgba(7, 11, 56, 1) 50%, rgba(26, 46, 122, 1) 100%); */
+    color: white;
+    height: 75px;
+    width: 100%;
+    border-radius: 3px;
+    position: fixed;
+
+    /* flexbox settings */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container_header > ul{
+    flex: 0 1 575px;
+}
+
+/* Elementos dentro do container Menu */
+
+/* configurações dos links */
+.menu_link{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+    margin-right: 55px;
+}
+
+.menu_link > li{
+    flex: 0 1 200px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.menu_link > li > a{
+    text-decoration: none;
+    color: white;
+}
+.menu_link > li > a:hover{
+    color: #E69500;
+    text-shadow: -0.2px 0.2px 1px black;
+}
+
+#link_assinar{
+    background-color: #FFA500;
+    border-radius: 25px;
+    padding: 5px 20px 5px 20px;
+    margin-left: 15px;
+}
+
+#link_assinar:hover{
+    background-color: #E69500;
+    color: white;
+}
+
+/* configurações da imagem Logo no Menu */
+img#imagem_logo{
+    height: 80px;
+    width: auto;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+/* MAIN */
+
+/* Imagem Principal Abertura */
+#container_imagem_eslogam{
+    display: flex;
+    align-items: center;
+
+     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('imagens/familia_assistindo_sliced.png') no-repeat center center;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 650px;
+    width: auto;
+}
+
+#box_texto_eslogam{
+    margin-left: 60px;
+    height: 400px;
+    width: 400px;
+}
+
+#texto_eslogam{
+    font-size: 2.7em;
+    color: white;
+    text-shadow: -2px 1px 1px black;
+}
+
+#texto_eslogam > strong{
+    color: #FFA500;
+    justify-content: center;
+}
+
+
+/* Exibição de Planos */
+
+.titulos_destaque{
+    font-size: 3em;
+    color: black;
+    margin: 50px 0px 30px 50px;
+}
+
+#container_planos{
+    background: white;
+    height: 800px;
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.caixa_plano{
+    background-color: white;
+    flex: 0 1 350px;
+    text-align: center;
+    margin: 10px 10px 0px 10px;
+    height: 500px;
+    width: 300px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0.4px 0.4px 4px rgba(128, 128, 128, 0.501);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caixa_plano_assinar{
+    height: 60px;
+    width: auto;
+    border-radius: 0px 0px 25px 25px;
+    background-color: #FFA500;
+    align-content: center;
+}
+
+.caixa_plano_assinar > a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.caixa_plano_assinar > a:hover {
+    background-color: #E69500;
+}
+
+
+
+
+
+
+
+/*
+background: linear-gradient(135deg,
+    #141F2C 0%,
+    #24364D 40%,
+    #2D4A68 70%,
+    #D9E2EC 90%,
+    #FFFFFF 100%
+    ); 
+*/

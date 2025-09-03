@@ -1,0 +1,9 @@
+CORES:
+
+#0D2AE0
+#012E40
+#F2E3D5
+
+ESLOGAM/TEXTOS:
+Se você está procurando o caminho para internet
+rápida e estável, vai de Street.
