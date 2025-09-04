@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>StreetNet</title>
+    <link rel="shortcut icon" href="imagens/logo_icon_azul.png" type="image/x-icon">
+
+    <!-- imports -->
+     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 
 
@@ -40,32 +49,127 @@
         <!-- Exibição de planos -->
         <article>
 
-            <section>
-                <h1 class="titulos_destaque">Confira nossos planos</h1>
+            <section> <!-- Planos da Empresa -->
 
-                <div id="container_planos">
+                <h1 class="titulos_destaque">Confira nossos planos <strong>imperdíveis</strong></h1> <!-- Texto "Confira nossos planos imperdíveis" -->
 
-                    <div class="caixa_plano">
-                        <p>A</p>
-                        <div class="caixa_plano_assinar"><a href="#">Assinar</a></div>
+                    <div id="container_planos_titulos">
+                        <div id="container_planos"> <!-- container que contem cada item de plano (4 ao todo) -->
+                            <div class="caixa_plano"> <!-- Plano 200MB -->
+                                <h2 class="titulo_plano">Street Start</h2>
+                                <div class="div_container_infos">
+                                    <p class="texto_plano"><span class="material-symbols-outlined icons_plano">android_wifi_4_bar</span> 200 Mega</p>
+                                    <p class="texto_bonus">Bonus:</p>
+                                </div>
+                                <div class="informacoes_plano">
+                                    <div class="conteudo_com_imagem">
+                                        <img src="imagens/logos/paramount-seeklogo.png" alt="">
+                                        <p class="texto_informacoes_plano_com_imagem">Paramount+</p>
+                                    </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">5g_mobiledata_badge</span>
+                                        <p class="texto_informacoes_plano">Wi-fi 5</p>
+                                     </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">school</span>
+                                        <p class="texto_informacoes_plano">Street Educa</p>
+                                     </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">call</span>
+                                        <p class="texto_informacoes_plano">Telefone fixo</p>
+                                     </div>
+                        
+                                </div>
+                                <p class="texto_valor_plano">R$ 80/mês</p>
+                                <a class="caixa_plano_assinar" href="#">Assinar</a>
+                            </div>
+                            <div class="caixa_plano"> <!-- Plano 400MB -->
+                                <h2 class="titulo_plano">Street Plus</h2>
+                                <div class="div_container_infos">
+                                    <p class="texto_plano"><span class="material-symbols-outlined icons_plano">android_wifi_4_bar</span> 400 Mega</p>
+                                    <p class="texto_bonus">Bonus:</p>
+                                </div>
+                                <div class="informacoes_plano">
+                                    <div class="conteudo_com_imagem">
+                                        <img src="imagens/logos/paramount-seeklogo.png" alt="">
+                                        <p class="texto_informacoes_plano_com_imagem">Paramount+</p>
+                                    </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">5g_mobiledata_badge</span>
+                                        <p class="texto_informacoes_plano">Wi-fi 5</p>
+                                     </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">school</span>
+                                        <p class="texto_informacoes_plano">Street Educa</p>
+                                     </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">call</span>
+                                        <p class="texto_informacoes_plano">Telefone fixo</p>
+                                     </div>
+                        
+                                </div>
+                                <p class="texto_valor_plano">R$ 100/mês</p>
+                                <a class="caixa_plano_assinar" href="#">Assinar</a>
+                            </div>
+                            <div class="caixa_plano"> <!-- Plano 600MB -->
+                                <h2 class="titulo_plano">Street Ultra</h2>
+                                <div class="div_container_infos">
+                                    <p class="texto_plano"><span class="material-symbols-outlined icons_plano">android_wifi_4_bar</span> 600 Mega</p>
+                                    <p class="texto_bonus">Bonus:</p>
+                                </div>
+                                <div class="informacoes_plano">
+                                    <div class="conteudo_com_imagem">
+                                        <img src="imagens/logos/paramount-seeklogo.png" alt="">
+                                        <p class="texto_informacoes_plano_com_imagem">Paramount+</p>
+                                    </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">5g_mobiledata_badge</span>
+                                        <p class="texto_informacoes_plano">Wi-fi 5</p>
+                                     </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">school</span>
+                                        <p class="texto_informacoes_plano">Street Educa</p>
+                                     </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">call</span>
+                                        <p class="texto_informacoes_plano">Telefone fixo</p>
+                                     </div>
+                        
+                                </div>
+                                <p class="texto_valor_plano">R$ 120/mês</p>
+                                <a class="caixa_plano_assinar" href="#">Assinar</a>
+                            </div>
+                            <div class="caixa_plano"> <!-- Plano 800MB -->
+                                <h2 class="titulo_plano">Street Max</h2>
+                                <div class="div_container_infos">
+                                    <p class="texto_plano"><span class="material-symbols-outlined icons_plano">android_wifi_4_bar</span> 800 Mega</p>
+                                    <p class="texto_bonus">Bonus:</p>
+                                </div>
+                                <div class="informacoes_plano">
+                                    <div class="conteudo_com_imagem">
+                                        <img src="imagens/logos/paramount-seeklogo.png" alt="">
+                                        <p class="texto_informacoes_plano_com_imagem">Paramount+</p>
+                                    </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">5g_mobiledata_badge</span>
+                                        <p class="texto_informacoes_plano">Wi-fi 5</p>
+                                     </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">school</span>
+                                        <p class="texto_informacoes_plano">Street Educa</p>
+                                     </div>
+                                     <div class="conteudo_com_imagem">
+                                        <span class="material-symbols-outlined icon_plano">call</span>
+                                        <p class="texto_informacoes_plano">Telefone fixo</p>
+                                     </div>
+                        
+                                </div>
+                                <p class="texto_valor_plano">R$ 140/mês</p>
+                                <a class="caixa_plano_assinar" href="#">Assinar</a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="caixa_plano">
-                        <p>A</p>
-                        <div class="caixa_plano_assinar"><a href="#">Assinar</a></div>
-                    </div>
-
-                    <div class="caixa_plano">
-                        <p>A</p>
-                        <div class="caixa_plano_assinar"><a href="#">Assinar</a></div>
-                    </div>
-
-                    <div class="caixa_plano">
-                        <p>A</p>
-                        <div class="caixa_plano_assinar"><a href="#">Assinar</a></div>
-                    </div>
-
-                </div>
+                
             </section>
 
         </article>
