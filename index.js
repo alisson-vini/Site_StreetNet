@@ -1,10 +1,10 @@
-let passou_titulo = 0
+let passou_titulo = 0;
 
 function mudar_cor_header(){
 
     let header = document.getElementById("container_header");
 
-    if (window.scrollY >= 300){
+    if (window.scrollY >= 195){
 
         // transição de cor do header
         header.style.backgroundColor = "rgba(7, 11, 56, 1)";
@@ -28,4 +28,37 @@ function mudar_cor_header(){
     }
 }
 
+function trocar_tipo_menu() {
+    let largura = window.innerWidth;
+    let menu = document.getElementById("lista_links");
+    let botao = document.getElementById("icone_menu_hamburger");
+    let botao_assinar = document.getElementById("link_assinar");
+
+    if (largura <= 1440){
+        botao.style.display = "block";
+        menu.classList.remove("menu_link");
+        menu.classList.add("menu_link_hamburguer");
+
+        botao_assinar.classList.add("link_assinar_hamburguer");
+        botao_assinar.classList.remove("link_assinar");
+    }
+    else{
+        menu.classList.add("menu_link");
+        menu.classList.remove("menu_link_hamburguer");
+        botao.style.display = "none";
+
+        botao_assinar.classList.remove("link_assinar_hamburguer");
+        botao_assinar.classList.add("link_assinar");
+    }
+}
+
+function abrir_fechar_menu_hamburger(){
+    console.log("rodou a função")
+    let menu_normal = document.getElementById("lista_links");
+    menu_normal.classList.toggle("aparecer_menu");
+
+};
+
+window.addEventListener("resize", trocar_tipo_menu);
+window.addEventListener("load", trocar_tipo_menu);
 window.addEventListener("scroll", mudar_cor_header);

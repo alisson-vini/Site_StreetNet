@@ -26,12 +26,15 @@
 
         <img id="imagem_logo" src="imagens/logo-street.png" alt="Logo Empresa">
 
-        <ul class="menu_link">
+        <ul id="lista_links" class="menu_link">
             <li> <a href="#">                   Início </a> </li>
-            <li> <a href="#">                   Contato </a> </li>
+            <li> <a href="#">                   Ajuda </a> </li>
             <li> <a href="#">                   Segunda via </a> </li>
-            <li> <a href="#" id="link_assinar"> Assinar </a> </li>
+            <li> <a href="#" id="link_assinar" class="link_assinar"> Assinar </a> </li>
         </ul>
+
+        <!-- so vai aparecer em dispositivos menores -->
+        <button id="icone_menu_hamburger" onclick="abrir_fechar_menu_hamburger()"><span class="material-symbols-outlined icon_plano">menu</span></button>
 
     </header>
 
