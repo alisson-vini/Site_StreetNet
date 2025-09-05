@@ -239,18 +239,6 @@ img#imagem_logo{
     flex-direction: row;
     justify-content: center;
 }
-@media (max-width: 1260px){
-    .container_planos{ /* versao para mobile dos planos */
-    background: white;
-    height: 850px;
-    width: 93%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    overflow-x: scroll;
-    }
-}
 
 .caixa_plano{
     background-color: white;
@@ -371,4 +359,40 @@ img#imagem_logo{
     transition: all 0.3s ease;
 }
 
+/* #endregion */
+
+
+
+/* #region media query 1260 */
+@media (max-width: 1260px){
+
+    .container_planos{ /* versao para mobile dos planos (cotainer dos planos)*/
+    background: white;
+    height: 850px;
+    width: 93%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    overflow-x: scroll;
+    }
+
+    .informacoes_plano{
+        margin: 0px 15px 0px 15px;
+        padding: 0px;
+    }
+
+    #box_texto_eslogam{
+        margin-left: 25px;
+    }
+
+    img#imagem_logo{
+        margin-left: 20px;
+    }
+
+    .titulos_destaque{
+        margin-left: 35px;
+    }
+
+}
 /* #endregion */
