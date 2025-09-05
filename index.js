@@ -3,6 +3,7 @@ let passou_titulo = 0;
 function mudar_cor_header(){
 
     let header = document.getElementById("container_header");
+    let largura = window.innerWidth;
 
     if (window.scrollY >= 195){
 
@@ -12,7 +13,7 @@ function mudar_cor_header(){
         header.style.transition = "background-color 0.35s ease";
 
         // rodar a página ate o título
-        if (!passou_titulo){
+        if (!passou_titulo && largura >= 1260){
             passou_titulo = 1;
             window.scrollTo({
                 top:635,

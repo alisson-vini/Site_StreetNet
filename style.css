@@ -366,6 +366,26 @@ img#imagem_logo{
 /* #region media query 1260 */
 @media (max-width: 1260px){
 
+    #container_imagem_eslogam{
+        height: 98vh;
+        width: 100vw;
+    }
+
+    #icone_menu_hamburger{
+        margin-right: 10px;
+    }
+
+    .menu_link_hamburguer{
+        width: 40%;
+    }
+
+    .titulos_destaque{
+        margin: 30px 15px 28px 14px;
+        padding-bottom: 10px;
+        font-size: 2em;
+        text-align: center;
+    }
+
     .container_planos{ /* versao para mobile dos planos (cotainer dos planos)*/
     background: white;
     height: 850px;
@@ -388,10 +408,6 @@ img#imagem_logo{
 
     img#imagem_logo{
         margin-left: 20px;
-    }
-
-    .titulos_destaque{
-        margin-left: 35px;
     }
 
 }
