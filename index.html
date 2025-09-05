@@ -27,14 +27,14 @@
         <img id="imagem_logo" src="imagens/logo-street.png" alt="Logo Empresa">
 
         <ul id="lista_links" class="menu_link">
-            <li> <a href="#">                   Início </a> </li>
-            <li> <a href="#">                   Ajuda </a> </li>
-            <li> <a href="#">                   Segunda via </a> </li>
+            <li> <a href="#">Início </a> </li>
+            <li> <a href="#">Ajuda </a> </li>
+            <li> <a href="#">Segunda via </a> </li>
             <li> <a href="#" id="link_assinar" class="link_assinar"> Assinar </a> </li>
         </ul>
 
         <!-- so vai aparecer em dispositivos menores -->
-        <button id="icone_menu_hamburger" onclick="abrir_fechar_menu_hamburger()"><span class="material-symbols-outlined icon_plano">menu</span></button>
+        <button id="icone_menu_hamburger" onclick="abrir_fechar_menu_hamburger()"><span id="icone_menu_hamburger_simbolo" class="material-symbols-outlined icon_plano">menu</span></button>
 
     </header>
 
@@ -56,8 +56,10 @@
 
                 <h1 class="titulos_destaque">Confira nossos planos <strong>imperdíveis</strong></h1> <!-- Texto "Confira nossos planos imperdíveis" -->
 
-                    <div id="container_planos_titulos">
-                        <div id="container_planos"> <!-- container que contem cada item de plano (4 ao todo) -->
+                    <div id="container_planos_titulos"> <!-- para centralizar o container no meio da tela -->
+
+                        <div class="container_planos"> <!-- container que contem cada item de plano (4 ao todo) -->
+
                             <div class="caixa_plano"> <!-- Plano 200MB -->
                                 <h2 class="titulo_plano">Street Start</h2>
                                 <div class="div_container_infos">
@@ -86,6 +88,7 @@
                                 <p class="texto_valor_plano">R$ 80/mês</p>
                                 <a class="caixa_plano_assinar" href="#">Assinar</a>
                             </div>
+
                             <div class="caixa_plano"> <!-- Plano 400MB -->
                                 <h2 class="titulo_plano">Street Plus</h2>
                                 <div class="div_container_infos">
@@ -114,6 +117,7 @@
                                 <p class="texto_valor_plano">R$ 100/mês</p>
                                 <a class="caixa_plano_assinar" href="#">Assinar</a>
                             </div>
+
                             <div class="caixa_plano"> <!-- Plano 600MB -->
                                 <h2 class="titulo_plano">Street Ultra</h2>
                                 <div class="div_container_infos">
@@ -142,6 +146,7 @@
                                 <p class="texto_valor_plano">R$ 120/mês</p>
                                 <a class="caixa_plano_assinar" href="#">Assinar</a>
                             </div>
+
                             <div class="caixa_plano"> <!-- Plano 800MB -->
                                 <h2 class="titulo_plano">Street Max</h2>
                                 <div class="div_container_infos">
@@ -170,7 +175,9 @@
                                 <p class="texto_valor_plano">R$ 140/mês</p>
                                 <a class="caixa_plano_assinar" href="#">Assinar</a>
                             </div>
+
                         </div>
+
                     </div>
                 
             </section>

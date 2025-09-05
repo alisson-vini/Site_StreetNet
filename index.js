@@ -53,9 +53,16 @@ function trocar_tipo_menu() {
 }
 
 function abrir_fechar_menu_hamburger(){
-    console.log("rodou a função")
     let menu_normal = document.getElementById("lista_links");
+    let icon_menu_hamburguer = document.getElementById("icone_menu_hamburger_simbolo");
     menu_normal.classList.toggle("aparecer_menu");
+
+    if (menu_normal.classList.contains("aparecer_menu")){
+        icon_menu_hamburguer.innerText = "close"
+    }
+    else{
+        icon_menu_hamburguer.innerText = "menu"
+    }
 
 };
 
